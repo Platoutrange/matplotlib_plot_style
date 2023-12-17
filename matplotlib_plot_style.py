@@ -16,10 +16,15 @@ import matplotlib.pyplot as plt
 # plt.style.use('fivethirtyeight') # 无坐标轴线，无刻度，方格面板，绘图线条较粗
 # plt.style.use('ggplot') # 灰色方格面板，格线是白色实线
 # plt.style.use('grayscale') # 黑白图
-# plt.style.use('seaborn') # 无刻度线，白色实线方格面板（面板是浅色）
+# plt.style.use('seaborn') # 无刻度线，白色实线方格面板（面板是浅色）：seaborn本来是另外一个绘图库，
+# 由于风格稳定，这里也提取为了一种可以调用的风格
 # plt.style.use('seaborn-ticks') # 刻度线稍长
 
-print(plt.style.available) # 输出可用的风格
+# print(plt.style.available) # 输出可用的风格：'Solarize_Light2', '_classic_test_patch', '_mpl-gallery', '_mpl-gallery-nogrid',
+# 'bmh', 'classic', 'dark_background', 'fast', 'fivethirtyeight', 'ggplot', 'grayscale', 'seaborn-v0_8', 'seaborn-v0_8-bright', 
+# 'seaborn-v0_8-colorblind', 'seaborn-v0_8-dark', 'seaborn-v0_8-dark-palette', 'seaborn-v0_8-darkgrid', 'seaborn-v0_8-deep', 
+# 'seaborn-v0_8-muted', 'seaborn-v0_8-notebook', 'seaborn-v0_8-paper', 'seaborn-v0_8-pastel', 'seaborn-v0_8-poster', 
+# 'seaborn-v0_8-talk', 'seaborn-v0_8-ticks', 'seaborn-v0_8-white', 'seaborn-v0_8-whitegrid', 'tableau-colorblind10'
 
 def plot_scatter(ax, nb_samples = 100):
     """Scatter plot."""
